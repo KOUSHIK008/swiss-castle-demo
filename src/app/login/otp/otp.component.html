@@ -14,31 +14,38 @@
     'is-tablet-landscape': isTabletLandscape,
     'is-web-landscape': isWebLandscape, 
   }">
-    <div class="background-image">
-      <div class="main-div">
-        <div class="card login-card ">
-          <div>
-            <img src="./assets/download.png" alt="" class="logo-image">
-          </div>
-          <p class="login-text mt-4 mb-2">Enter OTP</p>
-          <div class="mt-3 mb-3 mx-4">
-            <div class="row g-0">
-              <div class="col">
-                <input type="text" class="form-control otp-input" [(ngModel)]="otp1" (input)="onInputChange(1)" maxlength="1" />
-              </div>
-              <div class="col">
-                <input type="text" class="form-control otp-input" [(ngModel)]="otp2" (input)="onInputChange(2)" maxlength="1" />
-              </div>
-              <div class="col">
-                <input type="text" class="form-control otp-input" [(ngModel)]="otp3" (input)="onInputChange(3)" maxlength="1" />
-              </div>
-              <div class="col">
-                <input type="text" class="form-control otp-input" [(ngModel)]="otp4" (input)="onInputChange(4)" maxlength="1" />
-              </div>
+  <div class="background-image">
+    <div class="main-div">
+      <div class="card login-card ">
+        <div>
+          <img src="./assets/download.png" alt="" class="logo-image">
+        </div>
+        <p class="login-text mt-4 mb-2">Verify OTP</p>
+        <p>OTP sent to 9123456789</p>
+        <div class="mt-3 mb-3 mx-4">
+          <div class="row g-0">
+            <div class="col">
+              <input type="text" class="form-control otp-input" [(ngModel)]="otp1" (input)="onInputChange(1)"
+                maxlength="1" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control otp-input" [(ngModel)]="otp2" (input)="onInputChange(2)"
+                maxlength="1" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control otp-input" [(ngModel)]="otp3" (input)="onInputChange(3)"
+                maxlength="1" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control otp-input" [(ngModel)]="otp4" (input)="onInputChange(4)"
+                maxlength="1" />
             </div>
           </div>
-          <button (click)="navigateDetails()" type="button" class="btn btn-dark btn-lg mx-3 mt-3 mb-4 login-btn">Continue</button>
         </div>
+        <p>Didn't receive the OTP? <a class="resend-otp">Resend OTP</a> in 30 seconds</p>
+        <button (click)="navigateDetails()" type="button"
+          class="btn btn-dark btn-lg mx-3 mt-3 mb-4 login-btn">Continue</button>
       </div>
     </div>
   </div>
+</div>

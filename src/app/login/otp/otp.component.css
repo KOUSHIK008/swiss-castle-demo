@@ -31,3 +31,8 @@
   color: #fff;
 }
 
+.resend-otp{
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
