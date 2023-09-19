@@ -1,0 +1,128 @@
+*{
+    color: #fff;
+  }
+  
+  .background-image {
+      background-image: url('https://www.fnp.com/images/pr/l/v20221130174933/rose-paradise-chocolate-cake-half-kg_1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 100vh;
+      position: relative; 
+  }
+  
+  .main-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+  
+  .login-card{
+      background-color: #70c44c;
+      border: none;
+      width: 500px;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+  }
+  
+  .login-text {
+      font-size: 28px;
+      font-weight: 600;  
+  }
+  
+  .content-text {
+      padding: 0px 30px;
+  }
+  
+  .login-input {
+      background-color: #70c44c;
+      border: 1px solid #fff;
+      color: #fff !important;
+      border-radius: 0px !important;
+  }
+  
+  .login-btn {
+      border-radius: 0px !important;
+  }
+  
+  .login-input::placeholder {
+      color: #fff;
+      font-size: 1rem;
+  }
+  
+  .total-content.is-x-small {
+      overflow-x: hidden;
+    } 
+  
+  .total-content.is-x-small .background-image .login-card{
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      display: flex;
+      bottom:0px;
+      position: absolute;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      width: 100%;
+    } 
+  
+    .total-content.is-x-small .background-image .login-card .input-div{
+      width: 80%;
+    }
+  
+    .total-content.is-x-small .background-image .login-card .login-btn{
+      width: 80%;
+    }
+    
+    .total-content.is-x-small .logo-image{
+      width: 40vw;
+      height: 15vh;
+    }
+    
+    .total-content.is-tablet-portrait .background-image .login-card{
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        display: flex;
+        bottom:0px;
+        position: absolute;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    } 
+
+    .total-content.is-tablet-portrait .background-image .login-card .input-div{
+        width: 58%;
+    }
+    
+    .total-content.is-tablet-portrait .background-image .login-card .login-btn{
+        width: 58%;
+    }
+    
+    .total-content.is-web-portrait .background-image .login-card{
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        display: flex;
+        bottom:0px;
+        position: absolute;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    } 
+
+    .total-content.is-web-portrait .background-image .login-card .input-div{
+        width: 58%;
+    }
+    
+    .total-content.is-web-portrait .background-image .login-card .login-btn{
+        width: 58%;
+    }
+    
+    *{
+        color: #fff;
+      }
+   

@@ -1,0 +1,72 @@
+.total-content {
+    display: none;
+}
+
+.total-content.is-x-small {
+    display: block;
+}
+
+.image {
+    width: 100%;
+    height: 20vh;
+}
+
+.welcome-text {
+    color: #70c44c;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.heading-text {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.circular-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.sub-text {
+    font-size: 16px;
+}
+
+/* .progress-bar-div {
+    bottom: 0px;
+    position: absolute;
+    background-color: #70c44c;
+    height: 20vh;
+    z-index: 1;
+    border-radius: 50% 50% 0 0;
+} */
+
+
+/* .total-content.is-x-small .background-image .login-card {
+    display: flex;
+    bottom: 0px;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+} */
+
+/* .progress-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.progress-bar {
+    display: flex;
+    bottom: 0px;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+} */

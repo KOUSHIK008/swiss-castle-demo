@@ -4,6 +4,10 @@
   margin-right: 60px;
 }
 
+*{
+  color: #fff;
+}
+
 .get-started-btn {
   background-color: #fff;
   color: black;
@@ -40,4 +44,62 @@
 
 .btn:hover span {
   left: calc(100% - 55px);
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the card */
+.total-content.is-x-small .card.login-card {
+  animation: slide-up 0.5s ease-in-out;
+}
+
+.total-content.is-handset-portrait .card.login-card {
+  animation: slide-up 0.5s ease-in-out;
+}
+
+.total-content.is-tablet-portrait .card.login-card {
+  animation: slide-up 0.5s ease-in-out;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0.5); 
+    opacity: 0; 
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+.total-content.is-web-landscape .card.login-card {
+  animation: zoom-in 0.5s ease-in-out;
+}
+
+.total-content.is-tablet-landscape .card.login-card {
+  animation: zoom-in 0.5s ease-in-out;
+}
+
+.total-content.is-web-landscape .card.login-card {
+  animation: zoom-in 0.5s ease-in-out;
+}
+
+.total-content.is-web .card.login-card {
+  animation: zoom-in 0.5s ease-in-out;
+}
+
+.total-content.is-medium .card.login-card {
+  animation: zoom-in 0.5s ease-in-out;
+}
+
+.total-content.is-small .card.login-card {
+  animation: zoom-in 0.5s ease-in-out;
 }

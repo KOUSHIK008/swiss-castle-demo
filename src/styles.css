@@ -1,7 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-*{
-    color: #fff;
-  }
+
   
   .background-image {
       background-image: url('https://www.fnp.com/images/pr/l/v20221130174933/rose-paradise-chocolate-cake-half-kg_1.jpg');
@@ -59,20 +56,23 @@
     } 
   
   .total-content.is-x-small .background-image .login-card{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
       display: flex;
       bottom:0px;
       position: absolute;
       justify-content: center;
       text-align: center;
       align-items: center;
+      width: 100%;
     } 
   
-    .total-content.is-x-small .background-image .login-card .login-input{
+    .total-content.is-x-small .background-image .login-card .input-div{
       width: 100%;
     }
   
     .total-content.is-x-small .background-image .login-card .login-btn{
-      width: 58%;
+      width: 100%;
     }
     
     .total-content.is-x-small .logo-image{
@@ -90,7 +90,7 @@
     .btn-checkable:hover{
       background-color: #fff;
       color: #000; 
-      border: none; 
+      border: 1px solid #fff !important; 
     }
      
     .btn-check:checked + .btn-checkable {
@@ -111,5 +111,53 @@
     .total-content.is-x-small .background-image .gender-div{
       display: grid;
       text-align: left;
+      width: 100%;
     }
+
+    .total-content.is-tablet-portrait .background-image .gender-div{
+      display: flex;
+      justify-content:space-between;
+      width: 90%;
+    }
+
+    .total-content.is-tablet-portrait .background-image .login-card{
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      display: flex;
+      bottom:0px;
+      position: absolute;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      width: 100%;
+  } 
+
+  .total-content.is-tablet-portrait .background-image .login-card .input-div{
+      width: 90%;
+  }
+  
+  .total-content.is-tablet-portrait .background-image .login-card .login-btn{
+      width: 90%;
+  }
+  
+  .total-content.is-web-portrait .background-image .login-card{
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      display: flex;
+      bottom:0px;
+      position: absolute;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      width: 100%;
+  } 
+
+  .total-content.is-web-portrait .background-image .login-card .input-div{
+      width: 58%;
+  }
+  
+  .total-content.is-web-portrait .background-image .login-card .login-btn{
+      width: 58%;
+  }
+  
   

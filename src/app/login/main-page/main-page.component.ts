@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Router } from '@angular/router';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
-  selector: 'app-details',
-  templateUrl: './details.component.html',
-  styleUrls: ['./details.component.css']
+  selector: 'app-main-page',
+  templateUrl: './main-page.component.html',
+  styleUrls: ['./main-page.component.css']
 })
-export class DetailsComponent {
+export class MainPageComponent {
   isXSmall = false;
   isSmall = false;
   isMedium = false;
@@ -23,27 +23,15 @@ export class DetailsComponent {
   isTabletLandscape = false;
   isWebLandscape = false;
 
-  otp1: string = '';
-  otp2: string = '';
-  otp3: string = '';
-  otp4: string = '';
+  steps = [
+    { completed: true },
+    { completed: true },
+    { completed: false },
+    { completed: false },
+    // Add more steps as needed
+  ];
 
-  onInputChange(inputNumber: number) {
-    if (inputNumber === 1 && this.otp1) {
-      document.getElementById('otpInput2')?.focus();
-    } else if (inputNumber === 2 && this.otp2) {
-      document.getElementById('otpInput3')?.focus();
-    } else if (inputNumber === 3 && this.otp3) {
-      document.getElementById('otpInput4')?.focus();
-    }
-  }
-
-  constructor(private breakpointObserver: BreakpointObserver,private router: Router) { }
-  
- 
-  navigateselectOrderType() {
-    this.router.navigate(['/order']);
-  }
+  constructor(private breakpointObserver: BreakpointObserver, private router: Router) { }
 
   ngOnInit() {
     this.breakpointObserver.observe([

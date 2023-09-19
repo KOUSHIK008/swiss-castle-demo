@@ -1,13 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-details',
-  templateUrl: './details.component.html',
-  styleUrls: ['./details.component.css']
+  selector: 'app-select-order-type',
+  templateUrl: './select-order-type.component.html',
+  styleUrls: ['./select-order-type.component.css']
 })
-export class DetailsComponent {
+export class SelectOrderTypeComponent {
   isXSmall = false;
   isSmall = false;
   isMedium = false;
@@ -23,26 +23,23 @@ export class DetailsComponent {
   isTabletLandscape = false;
   isWebLandscape = false;
 
-  otp1: string = '';
-  otp2: string = '';
-  otp3: string = '';
-  otp4: string = '';
-
-  onInputChange(inputNumber: number) {
-    if (inputNumber === 1 && this.otp1) {
-      document.getElementById('otpInput2')?.focus();
-    } else if (inputNumber === 2 && this.otp2) {
-      document.getElementById('otpInput3')?.focus();
-    } else if (inputNumber === 3 && this.otp3) {
-      document.getElementById('otpInput4')?.focus();
-    }
-  }
-
   constructor(private breakpointObserver: BreakpointObserver,private router: Router) { }
   
- 
-  navigateselectOrderType() {
-    this.router.navigate(['/order']);
+  options: string[] = ['Option 1', 'Option 2', 'Option 3'];
+  selectedOption: string | undefined;
+  isDropdownOpen = false;
+
+  toggleDropdown() {
+    this.isDropdownOpen = !this.isDropdownOpen;
+  }
+
+  selectOption(option: string) {
+    this.selectedOption = option;
+    this.isDropdownOpen = false;
+  }
+
+  navigateMain() {
+    this.router.navigate(['/mainpage']);
   }
 
   ngOnInit() {

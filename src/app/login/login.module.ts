@@ -7,6 +7,8 @@ import { OtpComponent } from './otp/otp.component';
 import { DetailsComponent } from './details/details.component';
 import { FormsModule } from '@angular/forms';
 import { SplashComponent } from './splash/splash.component';
+import { SelectOrderTypeComponent } from './select-order-type/select-order-type.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { SplashComponent } from './splash/splash.component';
     SignupComponent,
     OtpComponent,
     DetailsComponent,
-    SplashComponent
+    SplashComponent,
+    SelectOrderTypeComponent,
+    MainPageComponent
   ],
   imports: [
     CommonModule,
