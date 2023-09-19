@@ -1,0 +1,115 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    color: #fff;
+  }
+  
+  .background-image {
+      background-image: url('https://www.fnp.com/images/pr/l/v20221130174933/rose-paradise-chocolate-cake-half-kg_1.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100vw;
+      height: 100vh;
+      position: relative; 
+  }
+  
+  .main-div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+  }
+  
+  .login-card{
+      background-color: #70c44c;
+      border: none;
+      width: 500px;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+  }
+  
+  .login-text {
+      font-size: 28px;
+      font-weight: 600;  
+  }
+  
+  .content-text {
+      padding: 0px 30px;
+  }
+  
+  .login-input {
+      background-color: #70c44c;
+      border: 1px solid #fff;
+      color: #fff !important;
+      border-radius: 0px !important;
+  }
+  
+  .login-btn {
+      border-radius: 0px !important;
+  }
+  
+  .login-input::placeholder {
+      color: #fff;
+      font-size: 1rem;
+  }
+  
+  .total-content.is-x-small {
+      overflow-x: hidden;
+    } 
+  
+  .total-content.is-x-small .background-image .login-card{
+      display: flex;
+      bottom:0px;
+      position: absolute;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    } 
+  
+    .total-content.is-x-small .background-image .login-card .login-input{
+      width: 100%;
+    }
+  
+    .total-content.is-x-small .background-image .login-card .login-btn{
+      width: 58%;
+    }
+    
+    .total-content.is-x-small .logo-image{
+      width: auto;
+      height: 10vh;
+    }
+  
+    .btn-checkable{
+      background-color: #70c44c;
+      border: 1px solid #fff;
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+  
+    .btn-checkable:hover{
+      background-color: #fff;
+      color: #000; 
+      border: none; 
+    }
+     
+    .btn-check:checked + .btn-checkable {
+      background-color: #fff;
+      color: #000; 
+      border: none; 
+    }
+    
+    .logo-sub-text{
+      font-size: 23px;
+    }
+    
+    .gender-div{
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .total-content.is-x-small .background-image .gender-div{
+      display: grid;
+      text-align: left;
+    }
+  

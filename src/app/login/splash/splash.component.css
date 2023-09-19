@@ -1,0 +1,8 @@
+.container-fluid{
+    color: red;
+    background-color: #70c44c;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}

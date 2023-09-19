@@ -1,0 +1,31 @@
+<div class="total-content" [ngClass]="{
+    'is-x-small': isXSmall,
+    'is-small': isSmall,
+    'is-medium': isMedium,
+    'is-large': isLarge,
+    'is-x-large': isXLarge,
+    'is-handset': isHandset,
+    'is-tablet': isTablet,
+    'is-web': isWeb,
+    'is-handset-portrait': isHandsetPortrait,
+    'is-tablet-portrait': isTabletPortrait,
+    'is-web-portrait': isWebPortrait,
+    'is-handset-landscape': isHandsetLandscape,
+    'is-tablet-landscape': isTabletLandscape,
+    'is-web-landscape': isWebLandscape, 
+  }">
+    <div class="background-image">
+      <div class="main-div">
+        <div class="card login-card ">
+          <div>
+            <img src="./assets/download.png"
+              alt="" class="logo-image">
+          </div>
+          <p class="login-text mt-4 mb-2">Welcome to <br class="d-sm-none"> Swiss Castle!</p>
+          <p class="sub-text">We're excited to help you find great food and get it delivered right to your doorstap.</p>
+          <button (click)="navigateGetStarted()" class="btn btn-lg mx-3 mt-3 mb-4 get-started-btn">Get Started <span><i class="bi bi-chevron-double-right"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

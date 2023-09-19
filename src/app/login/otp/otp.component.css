@@ -1,0 +1,25 @@
+.otp-input {
+  text-align: center;
+  padding: 16px 6px;
+  border: 1px solid #fff;
+  background-color: #70c44c;
+  color: #fff;
+  font-size: 20px;
+}
+
+.row .col {
+  margin-left: 10px;
+}
+
+.total-content.is-x-small .background-image .otp-input {
+  text-align: center;
+  border: 1px solid #fff;
+  background-color: #70c44c;
+  color: #fff;
+  width: 60%;
+}
+
+.total-content.is-x-small .background-image .row {
+  margin-left: 60px;
+  margin-right: 50px;
+}
