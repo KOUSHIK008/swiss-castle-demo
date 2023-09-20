@@ -21,8 +21,14 @@
       Lets find perfect cake for your occasion
     </p>
     <div class="row">
-      <div class="col text-center">
-        <img src="./assets/download (1).jpg" alt="" class="circular-image">
+      <div class="col text-center" (click)="selectImage('Anniversary')"
+        [ngClass]="{'selected': selectedImage === 'Anniversary'}">
+        <div class="image-wrapper">
+          <img src="./assets/download (1).jpg" alt="" class="circular-image">
+          <div *ngIf="selectedImage === 'Anniversary'" class="selection-overlay">
+            <i class="bi bi-check-lg"></i>
+          </div>
+        </div>
         <p class="sub-text mt-2">Anniversary</p>
       </div>
       <div class="col text-center">
@@ -51,5 +57,6 @@
         <p>hi</p>
       </div>
     </div> -->
+    <button (click)="navigatePage2()" type="button" class="btn btn-dark btn-lg mx-3 mt-3 mb-4">Continue</button>
   </div>
 </div>

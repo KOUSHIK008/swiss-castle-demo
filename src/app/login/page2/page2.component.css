@@ -1,0 +1,135 @@
+.total-content {
+    display: none;
+}
+
+.total-content.is-x-small {
+    display: block;
+}
+
+.btn-checkable {
+    border: 1px solid #8c8e91;
+    padding: 6px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.btn-check:checked+.btn-checkable {
+    background-color: #70c44c;
+    color: #fff;
+    border: none;
+}
+
+.logo-sub-text {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.heading-text {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.main-input {
+    border: 1px solid #8c8e91;
+    border-radius: 5px;
+}
+
+.people-count .btn-checkable {
+    border: 1px solid #8c8e91;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.people-count.btn-check:checked+.btn-checkable {
+    background-color: #70c44c;
+    color: #fff;
+    border: none;
+}
+
+.heading-text1 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.kg-card {
+    width: fit-content;
+    padding: 10px 25px;
+    background-color: #70c44c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.div-kg-card {
+    display: flex;
+    justify-content: center;
+}
+
+.kg-sub-text {
+    font-size: 12px;
+    color: #8c918e;
+}
+
+.proceed-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.proceed-btn {
+    color: #e7fef3;
+    background-color: #70c44c;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.back-btn {
+    color: #8c8e91;
+    font-size: 20px;
+    padding: 0;
+    font-weight: bolder
+}
+
+.range-input {
+    width: 100%;
+}
+
+/* Style the track (bar) */
+input[type=range] {
+    height: 36px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #EDECEA;
+    background: #EDECEA;
+    border-radius: 19px;
+    border: 0px solid #EDECEA;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 2px 2px 2px #70C44C;
+    border: 5px solid #70C44C;
+    height: 23px;
+    width: 23px;
+    border-radius: 23px;
+    background: #FFFFFF;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #70C44C;
+}
+
+

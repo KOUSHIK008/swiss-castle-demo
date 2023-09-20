@@ -7,15 +7,17 @@ import { DetailsComponent } from './details/details.component';
 import { SplashComponent } from './splash/splash.component';
 import { SelectOrderTypeComponent } from './select-order-type/select-order-type.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { Page2Component } from './page2/page2.component';
 
 const routes: Routes = [
-  {path:'', component:SplashComponent},
-  {path:'getstarted', component:GetStartedPageComponent},
-  {path:'signup', component:SignupComponent},
-  {path:'otp', component:OtpComponent},
-  {path:'details', component:DetailsComponent},
-  {path:'order', component:SelectOrderTypeComponent},
-  {path:'mainpage', component:MainPageComponent},
+  { path: '', component: SplashComponent },
+  { path: 'getstarted', component: GetStartedPageComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'otp', component: OtpComponent },
+  { path: 'details', component: DetailsComponent },
+  { path: 'order', component: SelectOrderTypeComponent },
+  { path: 'mainpage', component: MainPageComponent },
+  { path: 'page2', component: Page2Component },
 ];
 
 @NgModule({
