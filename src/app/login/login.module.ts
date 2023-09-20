@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { SplashComponent } from './splash/splash.component';
 import { SelectOrderTypeComponent } from './select-order-type/select-order-type.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { Page2Component } from './page2/page2.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MainPageComponent } from './main-page/main-page.component';
     DetailsComponent,
     SplashComponent,
     SelectOrderTypeComponent,
-    MainPageComponent
+    MainPageComponent,
+    Page2Component
   ],
   imports: [
     CommonModule,

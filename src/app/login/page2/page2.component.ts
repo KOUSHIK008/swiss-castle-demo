@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
-  selector: 'app-main-page',
-  templateUrl: './main-page.component.html',
-  styleUrls: ['./main-page.component.css']
+  selector: 'app-page2',
+  templateUrl: './page2.component.html',
+  styleUrls: ['./page2.component.css']
 })
-export class MainPageComponent {
+export class Page2Component {
   isXSmall = false;
   isSmall = false;
   isMedium = false;
@@ -22,7 +22,7 @@ export class MainPageComponent {
   isHandsetLandscape = false;
   isTabletLandscape = false;
   isWebLandscape = false;
-  selectedImage: string | null = null;
+  selectedValue: number = 0
 
   constructor(private breakpointObserver: BreakpointObserver, private router: Router) { }
 
@@ -62,13 +62,5 @@ export class MainPageComponent {
       this.isTabletLandscape = result.breakpoints[Breakpoints.TabletLandscape];
       this.isWebLandscape = result.breakpoints[Breakpoints.WebLandscape];
     });
-  }
-
-  selectImage(imageName: string): void {
-    if (this.selectedImage === imageName) {
-      this.selectedImage = null;
-    } else {
-      this.selectedImage = imageName;
-    }
   }
 }
