@@ -38,9 +38,24 @@ export class DetailsComponent {
     }
   }
 
+  letters(event: KeyboardEvent): boolean {
+    const charCode = event.key.charCodeAt(0);
+    if ((charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122) && charCode !== 32) {
+     return false;
+    }
+    return true;
+  }
+
+  date(event: KeyboardEvent): boolean {
+    const charCode = event.key.charCodeAt(0);
+    if ((charCode >= 48 && charCode <= 57) || charCode === 47) {
+      return true;
+    }
+    return false;
+  }
+  
   constructor(private breakpointObserver: BreakpointObserver,private router: Router) { }
   
- 
   navigateselectOrderType() {
     this.router.navigate(['/order']);
   }

@@ -23,25 +23,26 @@ export class SignupComponent {
   isTabletLandscape = false;
   isWebLandscape = false;
 
-  otp1: string = '';
-  otp2: string = '';
-  otp3: string = '';
-  otp4: string = '';
-
-  onInputChange(inputNumber: number) {
-    if (inputNumber === 1 && this.otp1) {
-      document.getElementById('otpInput2')?.focus();
-    } else if (inputNumber === 2 && this.otp2) {
-      document.getElementById('otpInput3')?.focus();
-    } else if (inputNumber === 3 && this.otp3) {
-      document.getElementById('otpInput4')?.focus();
-    }
-  }
-
   constructor(private breakpointObserver: BreakpointObserver,private router: Router) { }
   
   navigateOtp() {
     this.router.navigate(['/otp']);
+  }
+
+  letters(event: KeyboardEvent): boolean {
+    const charCode = event.key.charCodeAt(0);
+    if ((charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122) && charCode !== 32) {
+     return false;
+    }
+    return true;
+  }
+
+  numbers(event: KeyboardEvent): boolean {
+    const charCode = event.key.charCodeAt(0);
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+      return false;
+    }
+    return true;
   }
 
   ngOnInit() {

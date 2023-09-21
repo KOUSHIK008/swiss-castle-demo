@@ -1,5 +1,197 @@
-*{
-    color: #fff;
-  }
+.background-image {
+  background-image: url('https://www.fnp.com/images/pr/l/v20221130174933/rose-paradise-chocolate-cake-half-kg_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.custom-login-card {
+  background-color: #70c44c;
+  border: none;
+  width: 500px;
+  justify-content: center;
+  text-align: center;
+  padding: 36px;
+}
+
+.logo-image {
+  width: 196px;
+  height: 114px;
+}
+
+.otp-text {
+  font-size: 13px;
+  color: #e7fef3;
+}
+
+.heading-1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.heading-2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.text-field-input {
+  padding: 18px;
+  background-color: #70c44c;
+  color: #e7fef3;
+  border: solid 1px #e7fef3;
+  border-radius: 4px;
+}
+
+.text-field-input::placeholder {
+  color: #e7fef3;
+  font-size: 1rem;
+}
+
+.resend-otp-content {
+  display: flex;
+  text-align: left !important;
+}
+
+.resend-otp {
+  color: #e7fef3;
+  font-weight: 600;
+}
+
+.custom-login-btn {
+  color: #e7fef3;
+  padding: 13px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.custom-responsive-wrapper.is-x-small .background-image .custom-login-card {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flex;
+  bottom: 0px;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.custom-responsive-wrapper.is-x-small .background-image .custom-login-card .custom-input-field {
+  width: 100%;
+}
+
+.custom-responsive-wrapper.is-x-small .background-image .custom-login-card .resend-otp-content {
+  margin-right: auto;
+}
+
+.custom-responsive-wrapper.is-x-small .background-image .custom-login-card .custom-login-btn {
+  width: 100%;
+}
+
+.custom-responsive-wrapper.is-tablet-portrait .background-image .custom-login-card {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flex;
+  bottom: 0px;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.custom-responsive-wrapper.is-tablet-portrait .background-image .custom-login-card .custom-input-field {
+  width: 60%;
+}
+
+.custom-responsive-wrapper.is-tablet-portrait .background-image .custom-login-card .resend-otp-content {
+  width: 60%;
+}
+
+.custom-responsive-wrapper.is-tablet-portrait .background-image .custom-login-card .custom-login-btn {
+  width: 60%;
+}
+
+.custom-responsive-wrapper.is-web-portrait .background-image .custom-login-card {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flex;
+  bottom: 0px;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.custom-responsive-wrapper.is-web-portrait .background-image .custom-login-card .custom-input-field {
+  width: 60%;
+}
+
+.custom-responsive-wrapper.is-web-portrait .background-image .custom-login-card .resend-otp-content {
+  width: 60%;
+}
+
+.custom-responsive-wrapper.is-web-portrait .background-image .custom-login-card .custom-login-btn {
+  width: 60%;
+}
+
+/* details */
+
+.text-1{
+  font-size: 16px;
+  color: #e7fef3;
+}
+
+.check-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-checkable{
+  background-color: #70c44c;
+  border: solid 1px #e7fef3;
+  padding:10px 20px;
+  border-radius: 10px;
+  color: #e7fef3;
+  font-size: 12px;
+}
+
+.btn-checkable:hover{
+  background-color: #e7fef3;
+  color: #000; 
+  border: 1px solid #e7fef3 !important; 
+}
+ 
+.btn-check:checked + .btn-checkable {
+  background-color: #e7fef3;
+  color: #000; 
+  border: none; 
+}
+
+.custom-responsive-wrapper.is-x-small .background-image .custom-login-card .check-content {
+  width: 100%;
+}
+
+.custom-responsive-wrapper.is-web-portrait .background-image .custom-login-card .check-content {
+  width: 60%;
+}
+
+.custom-responsive-wrapper.is-tablet-portrait .background-image .custom-login-card .check-content {
+  width: 60%;
+}
   
   

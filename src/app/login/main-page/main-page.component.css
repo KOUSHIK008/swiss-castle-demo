@@ -1,36 +1,20 @@
-.total-content {
-    display: none;
-}
-
-.total-content.is-x-small {
-    display: block;
-}
-
-.image {
-    width: 100%;
-    height: 20vh;
-}
-
-.welcome-text {
-    color: #70c44c;
+.heading-5{
+    color: #77bf43;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
-.heading-text {
+.heading-2{
     font-size: 28px;
-    font-weight: 600;
+    color:#373c39;
+    font-weight: bold;
 }
 
 .circular-image {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 86px;
+    height: 86px;
     object-fit: cover;
-}
-
-.sub-text {
-    font-size: 16px;
 }
 
 .image-wrapper {
@@ -70,4 +54,10 @@
 
 .selected .selection-overlay {
     display: block;
+}
+
+.text-1{
+    font-size: 16px;
+    line-height: 1.4;
+    color: #44464a;
 }

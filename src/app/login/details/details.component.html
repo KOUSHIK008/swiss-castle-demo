@@ -1,51 +1,53 @@
-<div class="total-content" [ngClass]="{
-    'is-x-small': isXSmall,
-    'is-small': isSmall,
-    'is-medium': isMedium,
-    'is-large': isLarge,
-    'is-x-large': isXLarge,
-    'is-handset': isHandset,
-    'is-tablet': isTablet,
-    'is-web': isWeb,
-    'is-handset-portrait': isHandsetPortrait,
-    'is-tablet-portrait': isTabletPortrait,
-    'is-web-portrait': isWebPortrait,
-    'is-handset-landscape': isHandsetLandscape,
-    'is-tablet-landscape': isTabletLandscape,
-    'is-web-landscape': isWebLandscape, 
-  }">
-    <div class="background-image">
-      <div class="main-div">
-        <div class="card login-card ">
-          <div>
-            <img src="./assets/download.png" alt="" class="logo-image">
-          </div>
-          <p class="login-text mt-4 mb-2">Help us know you better</p>
-          <div class="mb-3 mt-4 mx-3 input-div">
-            <input type="text" class="form-control form-control-lg login-input" id="exampleFormControlInput1"
-              placeholder="Name*">
-          </div>
-          <div class="gender-div mx-3">
-            <div>
-              <p class="mt-2 logo-sub-text">Gender*</p>
-            </div>
-            <div class="">
-              <input type="radio" class="btn-check mb-2" name="options" id="option1" autocomplete="off">
-              <label class="btn btn-checkable me-2 mb-2" for="option1">Male</label>
-  
-              <input type="radio" class="btn-check mb-2" name="options" id="option2" autocomplete="off">
-              <label class="btn btn-checkable me-2 mb-2" for="option2">Female</label>
-  
-              <input type="radio" class="btn-check mb-2" name="options" id="option4" autocomplete="off">
-              <label class="btn btn-checkable mb-2" for="option4">Other</label>
-            </div>
-          </div>
-          <div class="mb-3 mt-3 mx-3 input-div">
-            <input type="text" class="form-control form-control-lg login-input" id="exampleFormControlInput1"
-            placeholder="Date of Birth(DD/MM/YY)*">
-          </div>
-          <button (click)="navigateselectOrderType()" type="button" class="btn btn-dark btn-lg mx-3 mt-3 mb-4 login-btn">Continue</button>
+<div class="custom-responsive-wrapper" [ngClass]="{
+  'is-x-small': isXSmall,
+  'is-small': isSmall,
+  'is-medium': isMedium,
+  'is-large': isLarge,
+  'is-x-large': isXLarge,
+  'is-handset': isHandset,
+  'is-tablet': isTablet,
+  'is-web': isWeb,
+  'is-handset-portrait': isHandsetPortrait,
+  'is-tablet-portrait': isTabletPortrait,
+  'is-web-portrait': isWebPortrait,
+  'is-handset-landscape': isHandsetLandscape,
+  'is-tablet-landscape': isTabletLandscape,
+  'is-web-landscape': isWebLandscape, 
+}">
+  <div class="background-image">
+    <div class="main-content">
+      <div class="card custom-login-card">
+        <div class="mb-4">
+          <img src="./assets/download.png" alt="" class="logo-image">
         </div>
+        <p class="heading-2 mb-2 mt-4">Help us know you better</p>
+        <div class="custom-input-field mb-3 mt-4">
+          <input type="text" class="form-control text-field-input " id="exampleFormControlInput1" placeholder="Name*"
+            (keypress)="letters($event)">
+        </div>
+
+        <div class="check-content mb-2">
+          <div>
+            <p class="text-1 mt-2">Gender*</p>
+          </div>
+          <div>
+            <input type="radio" class="btn-check mb-2" name="options" id="option1" autocomplete="off">
+            <label class="btn btn-checkable me-2 mb-2" for="option1">Male</label>
+
+            <input type="radio" class="btn-check mb-2" name="options" id="option2" autocomplete="off">
+            <label class="btn btn-checkable me-2 mb-2" for="option2">Female</label>
+
+            <input type="radio" class="btn-check mb-2" name="options" id="option4" autocomplete="off">
+            <label class="btn btn-checkable mb-2" for="option4">Other</label>
+          </div>
+        </div>
+
+        <div class="custom-input-field mb-3">
+          <input type="text" class="form-control text-field-input " id="exampleFormControlInput1"
+            placeholder="Date of Birth(DD/MM/YY)*" (keypress)="date($event)">
+        </div>
+        <button (click)="navigateselectOrderType()" type="button" class="btn btn-dark custom-login-btn">Continue</button>
       </div>
     </div>
   </div>
+</div>
