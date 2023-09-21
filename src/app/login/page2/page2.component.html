@@ -1,29 +1,29 @@
-<div class="total-content p-3" [ngClass]="{
-    'is-x-small': isXSmall,
-    'is-small': isSmall,
-    'is-medium': isMedium,
-    'is-large': isLarge,
-    'is-x-large': isXLarge,
-    'is-handset': isHandset,
-    'is-tablet': isTablet,
-    'is-web': isWeb,
-    'is-handset-portrait': isHandsetPortrait,
-    'is-tablet-portrait': isTabletPortrait,
-    'is-web-portrait': isWebPortrait,
-    'is-handset-landscape': isHandsetLandscape,
-    'is-tablet-landscape': isTabletLandscape,
-    'is-web-landscape': isWebLandscape, 
-  }">
-  <div>
-    <div>
-        <a class="back-btn" href="./mainpage"><i class="bi bi-arrow-left-circle"></i></a>
-    </div>
-    <p class="heading-text mb-3">Tell us your event details to suggest you relevant cakes</p>
-    <div class="gender-div mb-3">
+<div class="custom-responsive-wrapper" [ngClass]="{
+  'is-x-small': isXSmall,
+  'is-small': isSmall,
+  'is-medium': isMedium,
+  'is-large': isLarge,
+  'is-x-large': isXLarge,
+  'is-handset': isHandset,
+  'is-tablet': isTablet,
+  'is-web': isWeb,
+  'is-handset-portrait': isHandsetPortrait,
+  'is-tablet-portrait': isTabletPortrait,
+  'is-web-portrait': isWebPortrait,
+  'is-handset-landscape': isHandsetLandscape,
+  'is-tablet-landscape': isTabletLandscape,
+  'is-web-landscape': isWebLandscape, 
+}">
+  <div class="main-container p-2">
+    <div class="p-2">
+      <div class="mb-4">
+        <span class="heading-2">Tell us your event details to suggest you relevant cakes</span>
+      </div>
+      <div class="gender-content mb-3">
         <div>
-          <p class="mt-2 logo-sub-text">Gender*</p>
+           <p class="gender-text mt-2">Gender*</p>
         </div>
-        <div class="">
+        <div>
           <input type="radio" class="btn-check mb-2" name="options" id="option1" autocomplete="off">
           <label class="btn btn-checkable me-2 mb-2" for="option1">Male</label>
 
@@ -33,41 +33,49 @@
           <input type="radio" class="btn-check mb-2" name="options" id="option4" autocomplete="off">
           <label class="btn btn-checkable mb-2" for="option4">Other</label>
         </div>
+      </div>
+      <div class="custom-input-field mb-3">
+        <input type="text" class="form-control text-field-input " id="exampleFormControlInput1"
+          placeholder="Age*"  (keypress)="numbers($event)">
+      </div>
+      <hr class="hr-line">
+      <div class="py-2">
+        <p class="text-2 mb-4">No of People Attending</p>
+        <div class="d-flex justify-content-between mb-3">
+          <div>
+          <input type="radio" class="btn-check mb-2" name="options1" id="option1" autocomplete="off">
+          <label class="btn btn-checkable me-2 mb-2" for="option5">1-10</label>
+           </div>
+           <div>
+          <input type="radio" class="btn-check mb-2" name="options1" id="option2" autocomplete="off">
+          <label class="btn btn-checkable me-2 mb-2" for="option6">11-20</label>
+        </div>
+        <div>
+          <input type="radio" class="btn-check mb-2" name="options1" id="option4" autocomplete="off">
+          <label class="btn btn-checkable me-2 mb-2" for="option7">21-50</label>
+        </div>
+        <div>
+          <input type="radio" class="btn-check mb-2" name="options1" id="option4" autocomplete="off">
+          <label class="btn btn-checkable mb-2" for="option8">other</label>
+        </div>
+        </div>
+        <div class="custom-input-field mb-3">
+          <input type="text" class="form-control text-field-input " id="exampleFormControlInput1"
+            placeholder="Enter your own"  (keypress)="numbers($event)">
+        </div>
+        <p>
+          <span class="text-2">Suggested Weight of the cake based on the number of people attending the event is</span>
+        </p>
+        <div class="kg-card-content mb-3">
+          <div class="card kg-card"> <span class="value-text">{{ selectedValue }} KG</span></div>
+        </div>
+        <p class="mb-3 text-center kg-sub-text">1Kg Cake will Serve Approximately 4 People</p>
+        <div  class="mb-3 input-div">
+          <input type="range"  class="form-control-range range-input"
+              id="rangeInput" [(ngModel)]="selectedValue" min="0" max="100" step="1">
+        </div>
+        <button type="button" class="btn btn-dark custom-proceed-btn">Proceed to Select Flavour</button>
+      </div>
     </div>
-    <div class="mb-3 input-div">
-        <input type="number" class="form-control form-control-lg main-input" id="exampleFormControlInput1"
-          placeholder="Age*">
-      </div>
-      <hr class="mb-3">
-      <p class="heading-text1 mb-3">No of People Attending</p>
-      <div class="people-count mb-3">
-        <input type="radio" class="btn-check mb-2" name="options1" id="option5" autocomplete="off">
-        <label class="btn btn-checkable me-2 mb-2" for="option5">1-10</label>
-
-        <input type="radio" class="btn-check mb-2" name="options1" id="option6" autocomplete="off">
-        <label class="btn btn-checkable me-2 mb-2" for="option6">11-20</label>
-
-        <input type="radio" class="btn-check mb-2" name="options1" id="option7" autocomplete="off">
-        <label class="btn btn-checkable me-2 mb-2" for="option7">21-50</label>
-
-        <input type="radio" class="btn-check mb-2" name="options1" id="option8" autocomplete="off">
-        <label class="btn btn-checkable mb-2" for="option8">Other</label>
-      </div>
-      <div class="mb-3 input-div">
-        <input type="text" class="form-control form-control-lg main-input" id="exampleFormControlInput1"
-          placeholder="Enter your Own">
-      </div>
-      <p class="heading-text1 mb-3">Suggested Weight of the cake based on the number of people attending the event is</p>
-      <div class="div-kg-card mb-3">
-        <div class="card kg-card"> <span>{{ selectedValue }} KG</span></div>
-      </div>
-      <p class="mb-3 text-center kg-sub-text">1Kg Cake will Serve Approximately 4 People</p>
-      <div  class="mb-3 input-div">
-        <input type="range"  class="form-control-range range-input"
-            id="rangeInput" [(ngModel)]="selectedValue" min="0" max="100" step="1">
-      </div>
-      <div class="proceed-div">
-        <button class="btn btn-lg proceed-btn mt-4">Proceed to Select Flavour <span></span></button>
-      </div>
   </div>
 </div>

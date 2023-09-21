@@ -1,33 +1,32 @@
-<div class="total-content" [ngClass]="{
-    'is-x-small': isXSmall,
-    'is-small': isSmall,
-    'is-medium': isMedium,
-    'is-large': isLarge,
-    'is-x-large': isXLarge,
-    'is-handset': isHandset,
-    'is-tablet': isTablet,
-    'is-web': isWeb,
-    'is-handset-portrait': isHandsetPortrait,
-    'is-tablet-portrait': isTabletPortrait,
-    'is-web-portrait': isWebPortrait,
-    'is-handset-landscape': isHandsetLandscape,
-    'is-tablet-landscape': isTabletLandscape,
-    'is-web-landscape': isWebLandscape, 
-  }">
-    <div class="background-image">
-      <div class="main-div">
-        <div class="card login-card ">
-          <a class="skip" style="float: right;">Skip Login</a>
-          <div>
-            <img src="./assets/download.png" alt="" class="logo-image">
-          </div>
-          <p class="login-text mt-4 mb-2">Login/Signup</p>
-          <div class="mb-3 mt-4 mx-3 input-div">
-            <input type="email" class="form-control form-control-lg login-input" id="exampleFormControlInput1"
-              placeholder="Mobile Number">
-          </div>
-          <button (click)="navigateOtp()" type="button" class="btn btn-dark btn-lg mx-3 mt-3 mb-4 login-btn">Get Otp</button>
+<div class="custom-responsive-wrapper" [ngClass]="{
+  'is-x-small': isXSmall,
+  'is-small': isSmall,
+  'is-medium': isMedium,
+  'is-large': isLarge,
+  'is-x-large': isXLarge,
+  'is-handset': isHandset,
+  'is-tablet': isTablet,
+  'is-web': isWeb,
+  'is-handset-portrait': isHandsetPortrait,
+  'is-tablet-portrait': isTabletPortrait,
+  'is-web-portrait': isWebPortrait,
+  'is-handset-landscape': isHandsetLandscape,
+  'is-tablet-landscape': isTabletLandscape,
+  'is-web-landscape': isWebLandscape, 
+}">
+   <div class="background-image">
+    <div class="main-content">
+     <div class="card custom-login-card">
+         <div class="mb-4">
+          <img src="./assets/download.png" alt="" class="logo-image">
+         </div>
+         <p class="heading-2 mb-4 mt-4">Login/Signup</p>
+         <div class="custom-input-field mb-3 mt-4">
+          <input type="text" class="form-control text-field-input " id="exampleFormControlInput1"
+            placeholder="Mobile Number*"  (keypress)="numbers($event)">
         </div>
-      </div>
+        <button (click)="navigateOtp()" type="button" class="btn btn-dark custom-login-btn">Get OTP</button>
+     </div>
     </div>
-  </div>
+   </div>
+</div>

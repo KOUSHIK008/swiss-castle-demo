@@ -30,6 +30,22 @@ export class Page2Component {
     this.router.navigate(['/page2']);
   }
 
+  letters(event: KeyboardEvent): boolean {
+    const charCode = event.key.charCodeAt(0);
+    if ((charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122) && charCode !== 32) {
+     return false;
+    }
+    return true;
+  }
+
+  numbers(event: KeyboardEvent): boolean {
+    const charCode = event.key.charCodeAt(0);
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+      return false;
+    }
+    return true;
+  }
+
   ngOnInit() {
     this.breakpointObserver.observe([
       Breakpoints.XSmall,

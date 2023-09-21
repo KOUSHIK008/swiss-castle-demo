@@ -1,12 +1,238 @@
-.total-content.is-x-small .background-image .sub-text {
-  text-align: center;
-  margin-left: 70px;
-  margin-right: 60px;
+.background-image {
+  background-image: url('https://www.fnp.com/images/pr/l/v20221130174933/rose-paradise-chocolate-cake-half-kg_1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
-*{
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.custom-login-card {
+  background-color: #70c44c;
+  border: none;
+  width: 500px;
+  justify-content: center;
+  text-align: center;
+  padding: 36px;
+}
+
+.logo-image {
+  width: 196px;
+  height: 114px;
+}
+
+.otp-text {
+  font-size: 13px;
+  color: #e7fef3;
+}
+
+.heading-1 {
+  font-size: 36px;
+  font-weight: 600;
   color: #fff;
 }
+
+.heading-2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.text-field-select {
+  padding: 14px;
+  background-color: #70c44c;
+  color: #e7fef3;
+  border: solid 0.8px #e7fef3;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.resend-otp-content {
+  display: flex;
+  text-align: left !important;
+}
+
+.resend-otp {
+  color: #e7fef3;
+  font-weight: 600;
+}
+
+.custom-login-btn {
+  color: #e7fef3;
+  padding: 13px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.custom-responsive-wrapper.is-x-small .background-image .custom-login-card {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flex;
+  bottom: 0px;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.custom-responsive-wrapper.is-x-small .background-image .custom-login-card .custom-input-field {
+  width: 100%;
+}
+
+.custom-responsive-wrapper.is-x-small .background-image .custom-login-card .resend-otp-content {
+  margin-right: auto;
+}
+
+.custom-responsive-wrapper.is-x-small .background-image .custom-login-card .custom-login-btn {
+  width: 100%;
+}
+
+.custom-responsive-wrapper.is-tablet-portrait .background-image .custom-login-card {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flex;
+  bottom: 0px;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.custom-responsive-wrapper.is-tablet-portrait .background-image .custom-login-card .custom-input-field {
+  width: 60%;
+}
+
+.custom-responsive-wrapper.is-tablet-portrait .background-image .custom-login-card .resend-otp-content {
+  width: 60%;
+}
+
+.custom-responsive-wrapper.is-tablet-portrait .background-image .custom-login-card .custom-login-btn {
+  width: 60%;
+}
+
+.custom-responsive-wrapper.is-web-portrait .background-image .custom-login-card {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flex;
+  bottom: 0px;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.custom-responsive-wrapper.is-web-portrait .background-image .custom-login-card .custom-input-field {
+  width: 60%;
+}
+
+.custom-responsive-wrapper.is-web-portrait .background-image .custom-login-card .resend-otp-content {
+  width: 60%;
+}
+
+.custom-responsive-wrapper.is-web-portrait .background-image .custom-login-card .custom-login-btn {
+  width: 60%;
+}
+
+/* details */
+
+.text-1{
+  font-size: 16px;
+  color: #e7fef3;
+}
+
+.check-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-checkable{
+  background-color: #70c44c;
+  border: solid 1px #e7fef3;
+  padding:10px 20px;
+  border-radius: 10px;
+  color: #e7fef3;
+  font-size: 12px;
+}
+
+.btn-checkable:hover{
+  background-color: #e7fef3;
+  color: #000; 
+  border: 1px solid #e7fef3 !important; 
+}
+ 
+.btn-check:checked + .btn-checkable {
+  background-color: #e7fef3;
+  color: #000; 
+  border: none; 
+}
+
+.custom-responsive-wrapper.is-x-small .background-image .custom-login-card .check-content {
+  width: 100%;
+}
+
+.custom-responsive-wrapper.is-web-portrait .background-image .custom-login-card .check-content {
+  width: 60%;
+}
+
+.custom-responsive-wrapper.is-tablet-portrait .background-image .custom-login-card .check-content {
+  width: 60%;
+}
+
+/* select order type */
+
+.pickup-text{
+  color: #e7fef3;
+  font-size: 13px;
+}
+
+.order-tab-card{
+  background-color: #70c44c;
+  border: solid 0.8px rgba(240, 240, 244, 0.7);
+  border-radius: 8px;
+}
+
+.nav-pills{
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.nav-link{
+  width: 100%;
+  color: #686a6d;
+}
+
+.nav-link.active{
+  background-color: #70c44c;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.custom-responsive-wrapper.is-x-small .background-image .custom-login-card .order-tab-card {
+  width: 100%;
+}
+
+.custom-responsive-wrapper.is-web-portrait .background-image .custom-login-card .order-tab-card {
+  width: 60%;
+}
+
+.custom-responsive-wrapper.is-tablet-portrait .background-image .custom-login-card .order-tab-card {
+  width: 60%;
+}
+
+/* get started btn */
 
 .get-started-btn {
   background-color: #fff;
@@ -20,6 +246,7 @@
   align-items: center;
   padding-left: 40px;
   transition: 0.5s;
+  width: 100%;
 }
 
 .btn:hover {
@@ -45,62 +272,3 @@
 .btn:hover span {
   left: calc(100% - 55px);
 }
-
-@keyframes slide-up {
-  from {
-    transform: translateY(100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-/* Apply the animation to the card */
-.total-content.is-x-small .card.login-card {
-  animation: slide-up 0.5s ease-in-out;
-}
-
-.total-content.is-handset-portrait .card.login-card {
-  animation: slide-up 0.5s ease-in-out;
-}
-
-.total-content.is-tablet-portrait .card.login-card {
-  animation: slide-up 0.5s ease-in-out;
-}
-
-@keyframes zoom-in {
-  from {
-    transform: scale(0.5); 
-    opacity: 0; 
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-
-.total-content.is-web-landscape .card.login-card {
-  animation: zoom-in 0.5s ease-in-out;
-}
-
-.total-content.is-tablet-landscape .card.login-card {
-  animation: zoom-in 0.5s ease-in-out;
-}
-
-.total-content.is-web-landscape .card.login-card {
-  animation: zoom-in 0.5s ease-in-out;
-}
-
-.total-content.is-web .card.login-card {
-  animation: zoom-in 0.5s ease-in-out;
-}
-
-.total-content.is-medium .card.login-card {
-  animation: zoom-in 0.5s ease-in-out;
-}
-
-.total-content.is-small .card.login-card {
-  animation: zoom-in 0.5s ease-in-out;
-}
-

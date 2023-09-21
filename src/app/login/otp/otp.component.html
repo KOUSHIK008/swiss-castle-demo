@@ -1,51 +1,52 @@
-<div class="total-content" [ngClass]="{
-    'is-x-small': isXSmall,
-    'is-small': isSmall,
-    'is-medium': isMedium,
-    'is-large': isLarge,
-    'is-x-large': isXLarge,
-    'is-handset': isHandset,
-    'is-tablet': isTablet,
-    'is-web': isWeb,
-    'is-handset-portrait': isHandsetPortrait,
-    'is-tablet-portrait': isTabletPortrait,
-    'is-web-portrait': isWebPortrait,
-    'is-handset-landscape': isHandsetLandscape,
-    'is-tablet-landscape': isTabletLandscape,
-    'is-web-landscape': isWebLandscape, 
-  }">
-  <div class="background-image">
-    <div class="main-div">
-      <div class="card login-card ">
-        <div>
+<div class="custom-responsive-wrapper" [ngClass]="{
+  'is-x-small': isXSmall,
+  'is-small': isSmall,
+  'is-medium': isMedium,
+  'is-large': isLarge,
+  'is-x-large': isXLarge,
+  'is-handset': isHandset,
+  'is-tablet': isTablet,
+  'is-web': isWeb,
+  'is-handset-portrait': isHandsetPortrait,
+  'is-tablet-portrait': isTabletPortrait,
+  'is-web-portrait': isWebPortrait,
+  'is-handset-landscape': isHandsetLandscape,
+  'is-tablet-landscape': isTabletLandscape,
+  'is-web-landscape': isWebLandscape, 
+}">
+   <div class="background-image">
+    <div class="main-content">
+     <div class="card custom-login-card">
+         <div class="mb-4">
           <img src="./assets/download.png" alt="" class="logo-image">
-        </div>
-        <p class="login-text mt-4 mb-2">Verify OTP</p>
-        <p>OTP sent to 9123456789</p>
-        <div class="mt-3 mb-3 mx-4">
-          <div class="row g-0">
+         </div>
+         <p class="heading-2 mb-2 mt-4">Verify OTP</p>
+         <p class="text-center otp-text">OTP sent to 9123456789</p>
+         <div class="custom-input-field mt-4">
+          <div class="row g-4 mb-3">
             <div class="col">
-              <input type="text" class="form-control otp-input" [(ngModel)]="otp1" (input)="onInputChange(1)"
+              <input type="text" class="form-control text-center text-field-input" [(ngModel)]="otp1" (input)="onInputChange(1)"
                 maxlength="1" />
             </div>
             <div class="col">
-              <input type="text" class="form-control otp-input" [(ngModel)]="otp2" (input)="onInputChange(2)"
+              <input type="text" class="form-control text-center text-field-input" [(ngModel)]="otp2" (input)="onInputChange(2)"
                 maxlength="1" />
             </div>
             <div class="col">
-              <input type="text" class="form-control otp-input" [(ngModel)]="otp3" (input)="onInputChange(3)"
+              <input type="text" class="form-control text-center text-field-input" [(ngModel)]="otp3" (input)="onInputChange(3)"
                 maxlength="1" />
             </div>
             <div class="col">
-              <input type="text" class="form-control otp-input" [(ngModel)]="otp4" (input)="onInputChange(4)"
+              <input type="text" class="form-control text-center text-field-input" [(ngModel)]="otp4" (input)="onInputChange(4)"
                 maxlength="1" />
             </div>
           </div>
         </div>
-        <p>Didn't receive the OTP? <a class="resend-otp">Resend OTP</a> in 30 seconds</p>
-        <button (click)="navigateDetails()" type="button"
-          class="btn btn-dark btn-lg mx-3 mt-3 mb-4 login-btn">Continue</button>
-      </div>
+        <div class="resend-otp-content">
+        <p class="otp-text">Didn’t receive the OTP? <a href="" class="resend-otp">Resend OTP</a></p>
+        </div>
+        <button (click)="navigateDetails()" type="button" class="btn btn-dark custom-login-btn">Continue</button>
+     </div>
     </div>
-  </div>
+   </div>
 </div>

@@ -1,100 +1,111 @@
-.total-content {
-    display: none;
-}
-
-.total-content.is-x-small {
-    display: block;
-}
-
-.btn-checkable {
-    border: 1px solid #8c8e91;
-    padding: 6px 20px;
-    background-color: #fff;
-    border-radius: 5px;
-}
-
-.btn-check:checked+.btn-checkable {
-    background-color: #70c44c;
-    color: #fff;
-    border: none;
-}
-
-.logo-sub-text {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.heading-text {
-    font-size: 28px;
-    font-weight: 600;
-}
-
-.main-input {
-    border: 1px solid #8c8e91;
-    border-radius: 5px;
-}
-
-.people-count .btn-checkable {
-    border: 1px solid #8c8e91;
-    background-color: #fff;
-    border-radius: 5px;
-}
-
-.people-count.btn-check:checked+.btn-checkable {
-    background-color: #70c44c;
-    color: #fff;
-    border: none;
-}
-
-.heading-text1 {
+.heading-5{
+    color: #77bf43;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: bold;
 }
 
-.kg-card {
-    width: fit-content;
-    padding: 10px 25px;
-    background-color: #70c44c;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+.heading-2{
+    font-size: 28px;
+    color:#373c39;
+    font-weight: bold;
 }
 
-.div-kg-card {
-    display: flex;
-    justify-content: center;
+.text-1{
+    font-size: 16px;
+    line-height: 1.4;
+    color: #44464a;
 }
 
-.kg-sub-text {
-    font-size: 12px;
-    color: #8c918e;
+.text-2{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #44464a;
 }
 
-.proceed-div {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.proceed-btn {
+.text-field-input {
+    padding: 18px;
     color: #e7fef3;
-    background-color: #70c44c;
+    border: solid 1px #8c8e91;
+    border-radius: 4px;
+}
+
+.hr-line{
+    background-color: #e5e5eb;
+}
+
+.gender-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender-text{
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: left;
+    color: #44464a; 
+}
+
+.btn-checkable{
+    color: #44464a;
+    font-size: 12px;
+    padding:10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    border: solid 1px #8c8e91;
+  }
+  
+  .btn-checkable:hover{
+    background-color: #77bf43;
+    color:#e7fef3;  
+  }
+   
+  .btn-check:checked + .btn-checkable {
+    background-color: #77bf43;
+    color:#e7fef3; 
+  }
+
+  .custom-proceed-btn{
+    background-color: #77bf43;
+    color:#e7fef3;
     width: 100%;
-    border-radius: 5px;
-}
+    padding: 18px;
+    border-radius: 4px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
 
-.back-btn {
-    color: #8c8e91;
-    font-size: 20px;
-    padding: 0;
-    font-weight: bolder
-}
+  .kg-card-content{
+    display: flex;
+    justify-content: center;
+  }
 
-.range-input {
-    width: 100%;
-}
+  .kg-card{
+    background-color: #77bf43;
+    color:#e7fef3;
+    font-size: 14px;
+    font-weight: bold;
+    width: 79px;
+    height: 48px;
+    text-align: center;
+    border: none;
+  }
 
-/* Style the track (bar) */
+  .value-text{
+    padding-top: 18%;
+  }
+
+  .kg-sub-text{
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #8c918e;
+  }
+
+  /* Style the track (bar) */
 input[type=range] {
     height: 36px;
     -webkit-appearance: none;
@@ -131,5 +142,6 @@ input[type=range]::-webkit-slider-thumb {
 input[type=range]:focus::-webkit-slider-runnable-track {
     background: #70C44C;
 }
+
 
 
