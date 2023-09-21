@@ -74,7 +74,7 @@
           <input type="range"  class="form-control-range range-input"
               id="rangeInput" [(ngModel)]="selectedValue" min="0" max="100" step="1">
         </div>
-        <button type="button" class="btn btn-dark custom-proceed-btn">Proceed to Select Flavour</button>
+        <button (click)="navigatePage3()" type="button" class="btn btn-dark custom-proceed-btn">Proceed to Select Flavour</button>
       </div>
     </div>
   </div>

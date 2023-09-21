@@ -1,0 +1,80 @@
+<div class="custom-responsive-wrapper" [ngClass]="{
+    'is-x-small': isXSmall,
+    'is-small': isSmall,
+    'is-medium': isMedium,
+    'is-large': isLarge,
+    'is-x-large': isXLarge,
+    'is-handset': isHandset,
+    'is-tablet': isTablet,
+    'is-web': isWeb,
+    'is-handset-portrait': isHandsetPortrait,
+    'is-tablet-portrait': isTabletPortrait,
+    'is-web-portrait': isWebPortrait,
+    'is-handset-landscape': isHandsetLandscape,
+    'is-tablet-landscape': isTabletLandscape,
+    'is-web-landscape': isWebLandscape, 
+  }">
+    <div class="main-container p-2">
+        <div class="p-2">
+            <div class="mb-3">
+                <span class="heading-2">Now its time to decorate your cake</span>
+            </div>
+            <div class="row mt-4 g-0">
+                <div class="col text-center cake" (click)="selectImage('Anniversary')"
+                    [ngClass]="{'selected': selectedImage === 'Anniversary'}">
+                    <div class="image-wrapper">
+                        <img src="./assets/download (1).jpg" alt="" class="circular-image">
+                        <div *ngIf="selectedImage === 'Anniversary'" class="selection-overlay">
+                            <i class="bi bi-check-lg"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center cake" (click)="selectImage('Baby Shower')"
+                    [ngClass]="{'selected': selectedImage === 'Baby Shower'}">
+                    <div class="image-wrapper">
+                        <img src="./assets/images.jpg" alt="" class="circular-image">
+                        <div *ngIf="selectedImage === 'Baby Shower'" class="selection-overlay">
+                            <i class="bi bi-check-lg"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center cake" (click)="selectImage('Birthday')"
+                    [ngClass]="{'selected': selectedImage === 'Birthday'}">
+                    <div class="image-wrapper">
+                        <img src="./assets/download (2).jpg" alt="" class="circular-image">
+                        <div *ngIf="selectedImage === 'Birthday'" class="selection-overlay">
+                            <i class="bi bi-check-lg"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center cake" (click)="selectImage('Bride To Be')"
+                    [ngClass]="{'selected': selectedImage === 'Bride To Be'}">
+                    <div class="image-wrapper">
+                        <img src="./assets/download (3).jpg" alt="" class="circular-image">
+                        <div *ngIf="selectedImage === 'Bride To Be'" class="selection-overlay">
+                            <i class="bi bi-check-lg"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center cake" (click)="selectImage('Wedding')"
+                    [ngClass]="{'selected': selectedImage === 'Wedding'}">
+                    <div class="image-wrapper">
+                        <img src="./assets/download (4).jpg" alt="" class="circular-image">
+                        <div *ngIf="selectedImage === 'Wedding'" class="selection-overlay">
+                            <i class="bi bi-check-lg"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center cake" (click)="selectImage('Regular Cake')"
+                    [ngClass]="{'selected': selectedImage === 'Regular Cake'}">
+                    <div class="image-wrapper">
+                        <img src="./assets/download (5).jpg" alt="" class="circular-image">
+                        <div *ngIf="selectedImage === 'Regular Cake'" class="selection-overlay">
+                            <i class="bi bi-check-lg"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

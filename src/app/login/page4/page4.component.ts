@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
-  selector: 'app-page2',
-  templateUrl: './page2.component.html',
-  styleUrls: ['./page2.component.css']
+  selector: 'app-page4',
+  templateUrl: './page4.component.html',
+  styleUrls: ['./page4.component.css']
 })
-export class Page2Component {
+export class Page4Component {
   isXSmall = false;
   isSmall = false;
   isMedium = false;
@@ -22,18 +22,18 @@ export class Page2Component {
   isHandsetLandscape = false;
   isTabletLandscape = false;
   isWebLandscape = false;
-  selectedValue: number = 0
+  selectedImage: string | null = null;
 
   constructor(private breakpointObserver: BreakpointObserver, private router: Router) { }
 
-  navigatePage3() {
-    this.router.navigate(['/page3']);
+  navigatePage2() {
+    this.router.navigate(['/page2']);
   }
 
   letters(event: KeyboardEvent): boolean {
     const charCode = event.key.charCodeAt(0);
     if ((charCode < 65 || charCode > 90) && (charCode < 97 || charCode > 122) && charCode !== 32) {
-     return false;
+      return false;
     }
     return true;
   }
@@ -78,5 +78,13 @@ export class Page2Component {
       this.isTabletLandscape = result.breakpoints[Breakpoints.TabletLandscape];
       this.isWebLandscape = result.breakpoints[Breakpoints.WebLandscape];
     });
+  }
+
+  selectImage(imageName: string): void {
+    if (this.selectedImage === imageName) {
+      this.selectedImage = null;
+    } else {
+      this.selectedImage = imageName;
+    }
   }
 }
