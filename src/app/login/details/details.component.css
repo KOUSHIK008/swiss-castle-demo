@@ -16,7 +16,7 @@
 }
 
 .custom-login-card {
-  background-color: #70c44c;
+  background-color: #77bf43;
   border: none;
   width: 500px;
   justify-content: center;
@@ -43,19 +43,22 @@
   font-size: 28px;
   font-weight: 600;
   color: #fff;
+  font-family: 'proxima-nova-bold';
+  line-height: 1;
 }
 
 .text-field-input {
   padding: 18px;
-  background-color: #70c44c;
+  background-color: #77bf43;
   color: #e7fef3;
   border: solid 1px #e7fef3;
   border-radius: 4px;
+  font-family: 'proxima-nova-regular';
 }
 
 .text-field-input::placeholder {
   color: #e7fef3;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .resend-otp-content {
@@ -162,12 +165,14 @@
 }
 
 .btn-checkable{
-  background-color: #70c44c;
+  background-color: #77bf43;
   border: solid 1px #e7fef3;
   padding:10px 20px;
   border-radius: 10px;
   color: #e7fef3;
   font-size: 12px;
+  letter-spacing: 1px;
+  font-family: 'proxima-nova-regular';
 }
 
 .btn-checkable:hover{
@@ -193,5 +198,4 @@
 .custom-responsive-wrapper.is-tablet-portrait .background-image .custom-login-card .check-content {
   width: 60%;
 }
-  
-  
+ 

@@ -16,7 +16,7 @@
 }
 
 .custom-login-card {
-  background-color: #70c44c;
+  background-color: #77bf43;
   border: none;
   width: 500px;
   justify-content: center;
@@ -43,11 +43,13 @@
   font-size: 28px;
   font-weight: 600;
   color: #fff;
+  font-family: 'proxima-nova-bold';
+  line-height: 1;
 }
 
 .text-field-input {
   padding: 18px;
-  background-color: #70c44c;
+  background-color: #77bf43;
   color: #e7fef3;
   border: solid 1px #e7fef3;
   border-radius: 4px;
@@ -69,12 +71,15 @@
 }
 
 .custom-login-btn {
-  color: #e7fef3;
-  padding: 13px;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.4;
+  background-color: #1f1c0e;
+    color: #e7fef3;
+    padding: 13px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    font-family: 'proxima-nova-medium';
+    letter-spacing: normal;
 }
 
 .custom-responsive-wrapper.is-x-small .background-image .custom-login-card{

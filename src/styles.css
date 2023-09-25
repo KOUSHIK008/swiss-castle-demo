@@ -1,3 +1,19 @@
+
+
+@font-face {
+  font-family: 'proxima-nova-regular';
+  src: url('./assets/fonts/Proxima Nova Regular.ttf');
+}
+
+@font-face {
+  font-family: 'proxima-nova-medium';
+  src: url('./assets/fonts/proxima-nova-medium.ttf');
+}
+
+@font-face {
+  font-family: 'proxima-nova-bold';
+  src: url('./assets/fonts/Proxima-Nova-Bold.ttf');
+}
 /* 
   
   .background-image {
