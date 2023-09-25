@@ -61,3 +61,16 @@
     line-height: 1.4;
     color: #44464a;
 }
+
+.toggle-btn-div{
+    position: relative;
+}
+
+.toggle-btn{
+    position: absolute;
+    float: right;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    border: none;
+}

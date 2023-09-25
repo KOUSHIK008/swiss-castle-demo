@@ -12,6 +12,8 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { Page2Component } from './page2/page2.component';
 import { Page3Component } from './page3/page3.component';
 import { Page4Component } from './page4/page4.component';
+import { Page5Component } from './page5/page5.component';
+import { UpdateInformationComponent } from './update-information/update-information.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { Page4Component } from './page4/page4.component';
     MainPageComponent,
     Page2Component,
     Page3Component,
-    Page4Component
+    Page4Component,
+    Page5Component,
+    UpdateInformationComponent
   ],
   imports: [
     CommonModule,

@@ -16,7 +16,7 @@
 }
 
 .custom-login-card {
-  background-color: #70c44c;
+  background-color: #77bf43;
   border: none;
   width: 500px;
   justify-content: center;
@@ -47,7 +47,7 @@
 
 .text-field-select {
   padding: 14px;
-  background-color: #70c44c;
+  background-color: #77bf43;
   color: #e7fef3;
   border: solid 0.8px #e7fef3;
   border-radius: 4px;
@@ -158,7 +158,7 @@
 }
 
 .btn-checkable{
-  background-color: #70c44c;
+  background-color: #77bf43;
   border: solid 1px #e7fef3;
   padding:14px 22px;
   border-radius: 10px;
@@ -198,7 +198,7 @@
 }
 
 .order-tab-card{
-  background-color: #70c44c;
+  background-color: #77bf43;
   border: solid 0.8px rgba(240, 240, 244, 0.7);
   border-radius: 8px;
 }
@@ -214,7 +214,7 @@
 }
 
 .nav-link.active{
-  background-color: #70c44c;
+  background-color: #77bf43;
   width: 100%;
   border-radius: 4px;
 }

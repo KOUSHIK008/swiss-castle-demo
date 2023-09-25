@@ -16,7 +16,7 @@
 }
 
 .custom-login-card {
-    background-color: #70c44c;
+    background-color: #77bf43;
     border: none;
     width: 500px;
     justify-content: center;
@@ -42,7 +42,7 @@
 
 .text-field-input {
     padding: 18px;
-    background-color: #70c44c;
+    background-color: #77bf43;
     color: #e7fef3;
     border: solid 1px #e7fef3;
     border-radius: 4px;
@@ -54,6 +54,7 @@
 }
 
 .custom-login-btn {
+    background-color: #1f1c0e;
     color: #e7fef3;
     padding: 13px;
     border-radius: 4px;

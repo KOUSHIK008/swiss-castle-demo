@@ -1,0 +1,44 @@
+<div class="custom-responsive-wrapper" [ngClass]="{
+    'is-x-small': isXSmall,
+    'is-small': isSmall,
+    'is-medium': isMedium,
+    'is-large': isLarge,
+    'is-x-large': isXLarge,
+    'is-handset': isHandset,
+    'is-tablet': isTablet,
+    'is-web': isWeb,
+    'is-handset-portrait': isHandsetPortrait,
+    'is-tablet-portrait': isTabletPortrait,
+    'is-web-portrait': isWebPortrait,
+    'is-handset-landscape': isHandsetLandscape,
+    'is-tablet-landscape': isTabletLandscape,
+    'is-web-landscape': isWebLandscape, 
+  }">
+    <div class="main-container p-4">
+        <div class="mb-4 ">
+            <span class="heading-2">Keep your information updated with us</span>
+        </div>
+        <div class="mb-3">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label custom-label">Name</label>
+                <input (keypress)="letters($event)" type="text" class="form-control custom-details-input" id="exampleFormControlInput1" placeholder="Name">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label custom-label">Gender</label>
+                <input (keypress)="letters($event)" type="text" class="form-control custom-details-input" id="exampleFormControlInput1" placeholder="Gender">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label custom-label">Date of Birth</label>
+                <input type="date" class="form-control custom-details-input" id="exampleFormControlInput1" placeholder="01/12/2023">
+              </div>
+              <div class="mb-4">
+                <label for="exampleFormControlInput1" class="form-label custom-label">Mobile Number</label>
+                <input type="text" class="form-control custom-details-input" id="exampleFormControlInput1" (keypress)="numbers($event)" placeholder="7896541239">
+              </div>
+               <div class="mt-4">
+                <button type="button" class="btn custom-update-btn">Update Information</button>
+               </div>                                       
+        </div>
+    </div>
+</div>
+

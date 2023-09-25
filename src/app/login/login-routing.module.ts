@@ -10,6 +10,8 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { Page2Component } from './page2/page2.component';
 import { Page3Component } from './page3/page3.component';
 import { Page4Component } from './page4/page4.component';
+import { Page5Component } from './page5/page5.component';
+import { UpdateInformationComponent } from './update-information/update-information.component';
 
 const routes: Routes = [
   { path: '', component: SplashComponent},
@@ -22,6 +24,8 @@ const routes: Routes = [
   { path: 'page2', component: Page2Component},
   { path: 'page3', component: Page3Component},
   { path: 'page4', component: Page4Component},
+  { path: 'page5', component: Page5Component},
+  { path: 'update-information', component: UpdateInformationComponent},
 ];
 
 @NgModule({

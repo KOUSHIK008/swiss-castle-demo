@@ -16,7 +16,7 @@
 }
 
 .custom-login-card {
-  background-color: #70c44c;
+  background-color: #77bf43;
   border: none;
   width: 500px;
   justify-content: center;
@@ -38,17 +38,21 @@
   font-size: 36px;
   font-weight: 600;
   color: #fff;
+  font-family: 'proxima-nova-bold';
+  line-height: 1;
 }
 
 .heading-2 {
   font-size: 28px;
   font-weight: 600;
   color: #fff;
+  font-family: 'proxima-nova-bold';
+  line-height: 1;
 }
 
 .text-field-select {
   padding: 14px;
-  background-color: #70c44c;
+  background-color: #77bf43;
   color: #e7fef3;
   border: solid 0.8px #e7fef3;
   border-radius: 4px;
@@ -148,35 +152,36 @@
 
 /* details */
 
-.text-1{
+.text-1 {
   font-size: 16px;
   color: #e7fef3;
+  line-height: 1.4;
 }
 
-.check-content{
+.check-content {
   display: flex;
   justify-content: space-between;
 }
 
-.btn-checkable{
-  background-color: #70c44c;
+.btn-checkable {
+  background-color: #77bf43;
   border: solid 1px #e7fef3;
-  padding:10px 20px;
+  padding: 10px 20px;
   border-radius: 10px;
   color: #e7fef3;
   font-size: 12px;
 }
 
-.btn-checkable:hover{
+.btn-checkable:hover {
   background-color: #e7fef3;
-  color: #000; 
-  border: 1px solid #e7fef3 !important; 
+  color: #000;
+  border: 1px solid #e7fef3 !important;
 }
- 
-.btn-check:checked + .btn-checkable {
+
+.btn-check:checked+.btn-checkable {
   background-color: #e7fef3;
-  color: #000; 
-  border: none; 
+  color: #000;
+  border: none;
 }
 
 .custom-responsive-wrapper.is-x-small .background-image .custom-login-card .check-content {
@@ -193,29 +198,29 @@
 
 /* select order type */
 
-.pickup-text{
+.pickup-text {
   color: #e7fef3;
   font-size: 13px;
 }
 
-.order-tab-card{
-  background-color: #70c44c;
+.order-tab-card {
+  background-color: #77bf43;
   border: solid 0.8px rgba(240, 240, 244, 0.7);
   border-radius: 8px;
 }
 
-.nav-pills{
+.nav-pills {
   background-color: #fff;
   border-radius: 8px;
 }
 
-.nav-link{
+.nav-link {
   width: 100%;
   color: #686a6d;
 }
 
-.nav-link.active{
-  background-color: #70c44c;
+.nav-link.active {
+  background-color: #77bf43;
   width: 100%;
   border-radius: 4px;
 }
@@ -235,8 +240,8 @@
 /* get started btn */
 
 .get-started-btn {
-  background-color: #fff;
-  color: black;
+  background-color: #e7fef3;
+  color: #231d25;
   border-radius: 60px;
   height: 60px;
   border: none;
@@ -247,6 +252,10 @@
   padding-left: 40px;
   transition: 0.5s;
   width: 100%;
+  line-height: 1.4;
+  font-size: 16px;
+  font-weight: 500;
+  width: 80%;
 }
 
 .btn:hover {
@@ -259,16 +268,33 @@
   left: 5px;
   width: 50px;
   height: 50px;
-  background-color: #70c44c;
+  background-color: #77bf43;
   border-radius: 50%;
   transition: 0.5s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: #e7fef3;
   font-size: 1.5rem;
 }
 
 .btn:hover span {
   left: calc(100% - 55px);
+}
+
+.get-btn-content {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-responsive-wrapper.is-x-small .background-image .custom-login-card .get-btn-content {
+  width: 100%;
+}
+
+.custom-responsive-wrapper.is-web-portrait .background-image .custom-login-card .get-btn-content {
+  width: 80%;
+}
+
+.custom-responsive-wrapper.is-tablet-portrait .background-image .custom-login-card .get-btn-content {
+  width: 80%;
 }
